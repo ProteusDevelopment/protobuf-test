@@ -1,0 +1,12 @@
+syntax = "proto3";
+package test;
+
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "Protobuf";
+
+message Frame {
+    google.protobuf.Timestamp created = 1;
+    string frame_info = 2;
+    int32 number = 3;
+}
